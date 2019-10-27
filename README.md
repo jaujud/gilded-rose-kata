@@ -4,7 +4,7 @@ First attempt at Gilded Rose kata in C#
 Full requirements at the time being can be found in GildedRoseRequirements.txt
 
 
-#NOTES
+# NOTES
 
 There are some uncertainties in the requirements specification.
 
@@ -15,3 +15,5 @@ One would think that per this requirement only the degradation should be multipl
 2. Requirement for new feature: "'Conjured' items degrade in Quality twice as fast as normal items"
 
 It is not stated if only regular items can be "Conjured" or there can be special "Conjured" items like "Conjured Adged Brie". As it is impossible to clarify this, it is asumed the only regular items can be "Cojured".
+
+3. It is not mentioned if "backstage passes" apply only to "TAFKAL80ETC" concert. Initial implementation asumes it only applies to this particular concert.
