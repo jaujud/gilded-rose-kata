@@ -4,7 +4,7 @@ First attempt at Gilded Rose kata in C#
 Full requirements at the time being can be found in GildedRoseRequirements.txt
 
 
-#NOTES
+# NOTES
 
 There are some uncertainties in the requirements specification.
 
