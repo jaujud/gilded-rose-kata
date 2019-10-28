@@ -23,10 +23,8 @@ namespace GildedRose
                     case "Sulfuras, Hand of Ragnaros":
                         continue;
                     case "Aged Brie":
-                        if (item.Quality < maxItemQuality)
-                        {
-                            item.Quality = item.SellIn > 0 ? item.Quality + 1 : Math.Min(maxItemQuality, item.Quality + 2);
-                        }
+                        // Quality should not exceed maximum allowed quality of 50
+                        item.Quality = Math.Min(maxItemQuality, item.SellIn > 0 ? item.Quality + 1 : item.Quality + 2);
 
                         break;
                     case "Backstage passes to a TAFKAL80ETC concert":
@@ -59,6 +57,7 @@ namespace GildedRose
                             degradationAmount *= 2;
                         }
 
+                        // Item quality should never go bellow minimum allowed quality of 0
                         item.Quality = Math.Max(minItemQuality, item.Quality - degradationAmount);
 
                         break;
