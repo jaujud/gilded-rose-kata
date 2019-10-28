@@ -90,7 +90,7 @@ namespace csharp
                 new Item { Name = itemName, SellIn = 1, Quality = 10 },
                 new Item { Name = itemName, SellIn = 0, Quality = 10 },
                 new Item { Name = itemName, SellIn = -1, Quality = 10 },
-                new Item { Name = itemName, SellIn = -1, Quality = 50 }
+                new Item { Name = itemName, SellIn = -1, Quality = 49 }
             };
             IList<Item> ItemsExpected = new List<Item>
             {
